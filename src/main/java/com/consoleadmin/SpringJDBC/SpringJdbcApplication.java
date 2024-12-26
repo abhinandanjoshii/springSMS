@@ -18,11 +18,10 @@ public class SpringJdbcApplication {
 		s.setRollNo(104);
 		s.setName("Abhi");
 		s.setMarks(98);
-
+		//Change DB
 		StudentService service = context.getBean(StudentService.class);
 
 		service.addStudent(s);
-
 		List<Student> students = service.getStudents();
 		System.out.println(students);
 
